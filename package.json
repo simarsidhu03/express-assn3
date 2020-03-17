@@ -1,5 +1,5 @@
 {
-  "name": "express-assn2",
+  "name": "express-assn3",
   "version": "1.0.0",
   "engines": {
     "node": "^12.16.1"
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
