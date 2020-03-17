@@ -35,7 +35,7 @@ db.once('open', function() {
 
 // cors origin URL - Allow inbound traffic from origin
 corsOptions = {
-  origin: "https://express-assignment3.herokuapp.com/gallery",
+  origin: "https://express-assn3.herokuapp.com/gallery",
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 app.use(cors(corsOptions));
