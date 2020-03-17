@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+}
+.background-image{
+    background-image: url("../assets/cover.png");
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    background-size: cover;
+}
+.logo{
+    float: left;
+    height: 60px;
+    width: 60px;
+}
+
+ul{
+    background-color: blue;
+    list-style-type: none;
+    display: flex;
+    float:right;
+    margin:0;
+    padding: 1.3rem;
+}
+li a {
+    text-decoration: none;
+    padding: .5em 1em;
+    color:whitesmoke;
+}
+
+li a:hover{
+    background-color: turquoise;
+}
+.align{
+    margin: auto;
+    
+}
+
+.container {
+    margin: auto;
+    border: #fff solid 5px;
+    background: #fff;
+  }
+  img {
+    max-width: 100%;
+  }
+  img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  /* CSS Grid*/
+  .img-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+  }
+/* Bigger than Phones(tablet) */
+@media only screen and (min-width: 750px) {
+    .img-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Bigger than Phones(laptop / desktop) */
+  @media only screen and (min-width: 970px) {
+    .img-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .centerdiv{
+      text-align: center;
+  }
+
+  strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+.masthead {
+	background-color: #005b75;
+}
+
+.masthead p, .masthead p a {
+  color: white;
+}
+
+.site-title {
+	color: white;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+.card {
+	background: white;
+	margin-bottom: 2em;	
+}
+
+figure{
+  width:fit-content;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  width:80vw;
+  margin:auto;
+}
+
+figure img{
+  display: block;
+  width:inherit;
+}
+
+.card a {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.card-content {
+	padding: 1.4em;
+}
+
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+
+.card-content p {
+	font-size: 80%;
+}
+
+/* Flexbox stuff */
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.card {
+	flex: 0 1 24%;
+}
+
+.foot{
+  text-align: center;
+  background-color: aliceblue;
+  min-height: 100%;
+
+}
+
+#contact-form {
+    max-width: 1208px;
+    max-width: 75.5rem;
+    margin: 0 auto;
+  }
+  #contact, label, input[name="submit"] {
+    position: relative;
+  }
+  label > span, input, textarea, button {
+    box-sizing: border-box;
+  }
+  label {
+    display: block;
+  }
+  label > span {
+    display: none;
+  }
+  input, textarea, button {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    font: 300 100%/1.2 Ubuntu, sans-serif;
+  }
+  input[type="text"], input[type="email"], textarea {
+    margin: 0 0 1em;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  input.invalid, textarea.invalid {
+    border-color: #d5144d;
+  }
+  textarea {
+    height: 6em;
+  }
+  input[type="submit"], button {
+    background: #a7cd80;
+    color: #333;
+  }
+  input[type="submit"]:hover, button:hover {
+    background: #91b36f;
+  }
+  @media screen and (min-width: 30em) {
+    #contact-form h2 {
+      margin-left: 26.3736%;
+      font-size: 2em;
+      line-height: 1.5;
+    }
+    label > span {
+      vertical-align: top;
+      display: inline-block;
+      width: 26.3736%;
+      padding: 0.5em;
+      border: 1px solid transparent;
+      text-align: right;
+    }
+    input, textarea, button {
+      width: 73.6263%;
+      line-height: 1.5;
+    }
+    textarea {
+      height: 10em;
+    }
+    input[type="submit"], button {
+      margin-left: 26.3736%;
+    }
+  }
+  @media screen and (min-width: 48em) {
+    #contact-form {
+      text-align: justify;
+      line-height: 0;
+    }
+    #contact-form:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+    #contact-form h2 {
+      margin-left: 17.2661%;
+    }
+    #contact-form form, #contact-form aside {
+      vertical-align: top;
+      display: inline-block;
+      width: 65.4676%;
+      text-align: left;
+      line-height: 1.5;
+    }
+    #contact-form aside {
+      width: 30.9353%;
+    }
+  }
